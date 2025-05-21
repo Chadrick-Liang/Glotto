@@ -61,4 +61,8 @@ https://youtu.be/dUMAY7Z7r4k
 
 ## ⚙️ Installation & Running
 
-1. **Simply install Glotto.apk on your android device**  
+1. **Simply install Glotto.apk on your android device**
+
+---
+
+## Note: The openapi key used has since expired and hence the object recognition feature is no longer functioning.
