@@ -4,6 +4,22 @@
 
 ---
 
+## Collaborators
+
+- Chinnakonda Sreeranjith Devasreshtha 
+  
+- Fazeelathunnisa D/O Jafar Sathik Basha
+  
+- Tan Xuan Zhi, Cheri
+  
+- Chia Yu Xin, Reese
+  
+- Sakura Lam
+  
+- Melissa Lee
+
+---
+
 ## 🚀 Key Features
 
 **Overview video**
