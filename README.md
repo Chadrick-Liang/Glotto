@@ -19,7 +19,7 @@ https://youtu.be/dUMAY7Z7r4k
 2. **Pronunciation Assessment**  
    - Records short audio clips and sends them to the **Microsoft Azure Speech Assessment REST API**.  
    - Provides feedback and a pronunciation score to guide improvement.
-
+   <br>
    <img src="README_images/assess.jpg" alt="assessment page" width="200"/>
    <img src="README_images/assess2.jpg" alt="assessment page" width="200"/>
 
@@ -27,21 +27,21 @@ https://youtu.be/dUMAY7Z7r4k
    - Displays vocab flashcards in order of decreasing difficulty, based on a retention score.
    - Selecting Easy on a card orders it closer to the bottom of the deck while Difficult orders closer to the top.
    - Persists user progress via retention score in the **Firebase Firestore** .
-   
+   <br>
    <img src="README_images/card_front.jpg" alt="card" width="200"/>
    <img src="README_images/card_back.jpg" alt="card" width="200"/>
 
 4. **Interactive Adventure Game**  
    - A stage-based mini-game, where correct choices unlock new levels and rewards.  
    - Encourages reinforcement of learned words in a playful setting.
-   
+   <br>
    <img src="README_images/game.jpg" alt="game page" width="200"/>
    <img src="README_images/mcq.jpg" alt="game page" width="200"/>
 
 5. **User Authentication & Data Sync**  
    - Secure sign-in via **Firebase Authentication**.  
    - Real-time progress and achievement sync with **Firestore**, so users can switch devices seamlessly.
-   
+   <br>
    <img src="README_images/login.jpg" alt="login page" width="200"/>
 
 ---
