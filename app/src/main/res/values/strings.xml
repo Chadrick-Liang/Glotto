@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Glotto</string>
+    <string-array name="languages">
+        <item>Japanese</item>
+        <item>Korean</item>
+        <item>Spanish</item>
+    </string-array>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_image"
+        android:icon="@drawable/camera_icon"
+        android:title="AI-mage" />
+    <item
+        android:id="@+id/nav_flashcards"
+        android:icon="@drawable/flashcards_icon"
+        android:title="Flashcards" />
+    <item
+        android:id="@+id/nav_game"
+        android:icon="@drawable/game_icon"
+        android:title="Game" />
+</menu>

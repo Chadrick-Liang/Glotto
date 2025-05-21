@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageButton
+        android:id="@+id/closeRecord"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/cross"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/pronounceResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Checking pronunciation accuracy..."
+        android:textSize="30sp"
+        android:padding="8dp"
+        app:layout_constraintTop_toBottomOf="@id/closeRecord"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Audio bar -->
+    <ProgressBar
+        android:id="@+id/audioBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:progress="0"
+        app:layout_constraintTop_toBottomOf="@id/pronounceResult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp" />
+
+    <!-- Stop Recording button -->
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/stopRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Recording"
+        app:layout_constraintTop_toBottomOf="@id/audioBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/md_theme_surface"
+        app:iconTint="@color/md_theme_surfaceVariant"
+        app:backgroundTint="@color/material_dynamic_primary70"
+        />
+
+    <!-- Replay Recording button -->
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/playRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play Your Recording"
+        app:layout_constraintTop_toBottomOf="@id/stopRecord"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:textColor="@color/md_theme_surface"
+        app:iconTint="@color/md_theme_surfaceVariant"
+        app:backgroundTint="@color/md_theme_tertiaryContainer"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

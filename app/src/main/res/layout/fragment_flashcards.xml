@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- Front of the Flashcard -->
+    <LinearLayout
+        android:id="@+id/card_front"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/front_foreign_word"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Foreign Word"
+            android:textSize="45sp"
+            android:layout_weight="10"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="75"
+            />
+
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/answer_button"
+            android:layout_width="350dp"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="Show Answer"
+            android:textColor="@color/md_theme_surface"
+            app:iconTint="@color/md_theme_surfaceVariant"
+            app:backgroundTint="@color/md_theme_tertiaryContainer"
+            />
+
+    </LinearLayout>
+
+    <!-- Back of the Flashcard -->
+
+    <LinearLayout
+        android:id="@+id/card_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/back_foreign_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Foreign Word"
+            android:textSize="30sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginVertical="20dp"/>
+
+        <LinearLayout
+            android:id="@+id/audio_buttons"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                />
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/audio_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="Play Audio"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/md_theme_surface"
+                app:iconTint="@color/md_theme_surfaceVariant"
+                app:backgroundTint="@color/md_theme_primaryContainer"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                />
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/audio_checker"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="Pronunciation"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="evaluates user's pronunciation"
+                android:textColor="@color/md_theme_surface"
+                app:iconTint="@color/md_theme_surfaceVariant"
+                app:backgroundTint="@color/md_theme_primaryContainer"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/english_meaning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="English Meaning"
+            android:textSize="30sp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/foreign_sentence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="example sentence in target language."
+            android:textSize="30sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:paddingHorizontal="20sp"
+            />
+
+        <TextView
+            android:id="@+id/english_sentence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="example sentence in English language."
+            android:textSize="25sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0"
+            android:layout_marginTop="30dp"
+            android:paddingHorizontal="20sp"
+            />
+
+        <LinearLayout
+            android:id="@+id/buttonRow"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:weightSum="13"
+            android:gravity="bottom|center_horizontal"
+            android:orientation="horizontal"
+            android:paddingHorizontal="5sp"
+            android:layout_marginBottom="10dp">
+
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/difficult_button"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="Difficult"
+                android:contentDescription="evaluates user's pronunciation"
+                android:textColor="@color/md_theme_surface"
+                app:iconTint="@color/md_theme_surfaceVariant"
+                app:backgroundTint="@color/md_theme_error"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                />
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/okay_button"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="Okay"
+                android:textColor="@color/md_theme_surface"
+                app:iconTint="@color/md_theme_surfaceVariant"
+                app:backgroundTint="@color/material_dynamic_primary70"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.5"
+                />
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/easy_button"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="Easy"
+                android:textColor="@color/md_theme_surface"
+                app:iconTint="@color/md_theme_surfaceVariant"
+                app:backgroundTint="@color/md_theme_tertiaryContainer"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rootRL"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/stage2_bg"> <!-- need to change this based on stage-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/gameLogicContainer"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/gameplay_thoth">
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="ぶどうを買いたいです。"
+        android:textSize="50sp"
+        android:padding="20dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/choice1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="450dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/stage2_1_1"/>
+
+    <ImageButton
+        android:id="@+id/choice2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="480dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/stage2_1_2"/>
+
+    <ImageButton
+        android:id="@+id/choice3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="450dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/stage2_1_3"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

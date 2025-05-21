@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/dropdown"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:entries="@array/languages"
+        android:textSize="50dp"
+        android:layout_marginTop="30dp"/>
+
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/captureButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/dropdown"
+        android:layout_gravity="bottom|end"
+        android:contentDescription="take a picture of unknown object for identification"
+        android:text="CAPTURE PHOTO"
+        android:textColor="@color/md_theme_surface"
+        app:icon="@drawable/camera_icon"
+        app:iconTint="@color/md_theme_surfaceVariant"
+        app:backgroundTint="@color/md_theme_tertiaryContainer"
+        />
+
+    <TextView
+        android:id="@+id/instructions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_below="@id/captureButton"
+        android:layout_margin="16dp"
+        android:textSize="18sp"
+        android:text="Instructions:\nTake a picture of the object you wish to identify in your target language.\n\nPlease ensure the picture has only one identifieable object within the frame."/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/captureButton"
+        android:layout_margin="16dp"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_below="@id/imageView"
+        android:layout_margin="16dp"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:id="@+id/audio_buttons"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/resultTextView"
+        android:orientation="horizontal"
+        android:weightSum="8">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/replayButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:visibility="gone"
+            android:contentDescription="replay the given pronunciation"
+            android:text="REPLAY AUDIO"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/md_theme_surface"
+            app:iconTint="@color/md_theme_surfaceVariant"
+            app:backgroundTint="@color/material_dynamic_primary70"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/create_card"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:visibility="gone"
+            android:contentDescription="create a flash card of the current object"
+            android:text="CREATE CARD"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/md_theme_surface"
+            app:iconTint="@color/md_theme_surfaceVariant"
+            app:backgroundTint="@color/material_dynamic_primary70"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
