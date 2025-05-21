@@ -7,7 +7,9 @@
 ## 🚀 Key Features
 
 **Overview video**
+<br>
 https://youtu.be/dUMAY7Z7r4k 
+<br>
 
 1. **Camera-Based Vocabulary Recognition**  
    - Allows users to take an image of an unknown object in their target language.
