@@ -12,7 +12,7 @@ https://youtu.be/dUMAY7Z7r4k
 1. **Camera-Based Vocabulary Recognition**  
    - Allows users to take an image of an unknown object in their target language.
    - Calls the **OpenAI Vision REST API** to identify objects in the real world and display their names in the target language.
-
+<br>
    <img src="README_images/identify_a.jpg" alt="game page" width="200"/>
    <img src="README_images/identify_b.jpg" alt="game page" width="200"/>
 
